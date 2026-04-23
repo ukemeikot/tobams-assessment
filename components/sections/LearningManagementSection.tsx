@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/Button";
-import { Container } from "@/components/ui/Container";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
 import { learningManagementCourses } from "@/lib/constants";
 
@@ -8,12 +7,12 @@ export function LearningManagementSection() {
     <section id="about" className="bg-[rgba(87,18,68,0.10)]">
       <div className="h-4 w-full bg-white sm:h-5" aria-hidden="true" />
       <div className="py-12 md:px-16 md:py-12">
-        <div className="mx-auto grid w-full max-w-[1440px] items-center gap-8 px-4 sm:px-6 md:min-h-[664px] md:grid-cols-[0.92fr_1.08fr] md:gap-12 md:px-0">
+        <div className="mx-auto grid w-full max-w-360 items-center gap-8 px-4 sm:px-6 md:min-h-[664px] md:grid-cols-[0.92fr_1.08fr] md:gap-12 md:px-0">
           <div className="flex justify-center md:justify-start">
             <PlaceholderImage
               src="/images/learning-management.jpg"
               alt="Learning management system section image"
-              className="aspect-square w-full max-w-[240px] rounded-full sm:max-w-[320px] lg:max-w-[400px]"
+              className="aspect-square w-full max-w-60 rounded-full sm:max-w-[320px] lg:max-w-[400px]"
               overlay="none"
             />
           </div>
@@ -32,15 +31,15 @@ export function LearningManagementSection() {
                 offers a wide range of courses to cater to diverse learning
                 needs.
               </p>
-              <p className="text-[14px] font-bold leading-[1.5] tracking-[0] text-[#571244] sm:text-[16px] md:text-[18px]">
+              <p className="text-[14px] font-bold leading-normal tracking-normal text-[#571244] sm:text-[16px] md:text-[18px]">
                 Some of our courses include:
               </p>
-              <ul className="grid gap-x-4 gap-y-2 text-[14px] leading-6 font-normal tracking-[0] text-[#151515] sm:grid-cols-2 sm:text-[15px] md:text-[16px] md:leading-[1.5] xl:grid-cols-3">
+              <ul className="grid gap-x-4 gap-y-2 text-[14px] leading-6 font-normal tracking-normal text-[#151515] sm:grid-cols-2 sm:text-[15px] md:text-[16px] md:leading-normal xl:grid-cols-3">
                 {learningManagementCourses.map((course) => (
                   <li key={course} className="flex items-start gap-2 whitespace-nowrap">
                     <span
                       aria-hidden="true"
-                      className="mt-[9px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#151515]"
+                      className="mt-2.25 h-1.5 w-1.5 shrink-0 rounded-full bg-[#151515]"
                     />
                     <span>{course}</span>
                   </li>
@@ -51,7 +50,7 @@ export function LearningManagementSection() {
               <Button
                 href="#consultation"
                 variant="learnMore"
-                className="h-12 gap-2 rounded-[4px] bg-[#571244] px-6 py-[10.5px] text-[18px] leading-[1.5] font-semibold tracking-[0] !text-white"
+                className="h-12 gap-2 rounded-sm bg-[#571244] px-6 py-[10.5px] text-[18px] leading-normal font-semibold tracking-normal text-white!"
               >
                 Learn More
               </Button>

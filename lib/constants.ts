@@ -116,28 +116,46 @@ export const consultantFeatures = [
 
 export const testimonials = [
   {
-    author: "Asher Yusuf",
-    role: "Founder, CxHub NG",
+    author: "Aisha Yusuf",
+    role: "Founder, CraftHub NG",
+    avatarUrl: "https://randomuser.me/api/portraits/women/79.jpg",
     quote:
-      "Working with Tobams Group on our website was a breeze. They understood our vision and transformed it into a beautiful, intuitive space that genuinely reflected the brand.",
+      "Working with Tobams Group on our website was a breeze. They understood our vision and transformed it into a beautiful online space. Highly recommend their Website Design service!",
   },
   {
     author: "John Davies",
     role: "Marketing Manager, E-Commerce Emporium",
+    avatarUrl: "https://randomuser.me/api/portraits/men/32.jpg",
     quote:
-      "Tobams Group's digital marketing strategies gave our brand the boost it needed. Simple yet powerful techniques that delivered tangible results and measurable growth.",
+      "Tobams Group's Digital Marketing strategies gave our brand the boost it needed. Simple yet powerful techniques that delivered tangible results. A pleasure to collaborate with!",
   },
   {
-    author: "Chioma Nwankwo",
+    author: "Chinonso Nwankwo",
     role: "HR Director, FutureTech Solutions",
+    avatarUrl: "https://randomuser.me/api/portraits/women/68.jpg",
     quote:
-      "Tobams Group has been instrumental in our talent acquisition journey. Their tech talent solution service consistently connects us with high-performing professionals.",
+      "Tobams Group has been instrumental in our talent acquisition journey. Their Tech Talent Solution service consistently connects us with the right professionals. Reliable and straightforward.",
   },
   {
     author: "Titi Adebayo",
     role: "Operations Lead, ScaleUp Grid",
+    avatarUrl: "https://randomuser.me/api/portraits/women/65.jpg",
     quote:
       "The learning programs were practical, insightful, and immediately useful. Our team left with stronger communication, sharper strategy, and renewed confidence.",
+  },
+  {
+    author: "Michael Brown",
+    role: "Product Lead, Nova Reach",
+    avatarUrl: "https://randomuser.me/api/portraits/men/75.jpg",
+    quote:
+      "From strategy sessions to execution, Tobams Group brought clarity and momentum to our digital growth. Their team was thoughtful, responsive, and results-focused.",
+  },
+  {
+    author: "Sarah Johnson",
+    role: "Community Manager, Bloom Circle",
+    avatarUrl: "https://randomuser.me/api/portraits/women/44.jpg",
+    quote:
+      "The support we received felt truly personalised. Tobams Group helped us sharpen our message, improve our presence, and build with much more confidence.",
   },
 ];
 

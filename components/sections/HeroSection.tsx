@@ -21,15 +21,15 @@ export function HeroSection() {
         className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,255,255,0.06),transparent_42%),linear-gradient(180deg,rgba(13,3,9,0.1),rgba(13,3,9,0.82))]"
       />
 
-      <Container className="relative flex min-h-[300px] items-center justify-center py-10 sm:min-h-[440px] sm:py-16 md:min-h-[580px] md:py-20">
-        <div className="mx-auto max-w-[320px] text-center sm:max-w-[420px] md:max-w-[1205px]">
-          <span className="inline-flex h-[45px] items-center justify-center gap-[10px] rounded-[100px] bg-white/10 px-12 py-3 text-center text-[14px] leading-[1.5] font-semibold tracking-[0] text-white">
+      <Container className="relative flex min-h-75 items-center justify-center py-10 sm:min-h-110 sm:py-16 md:min-h-145 md:py-20">
+        <div className="mx-auto max-w-[320px] text-center sm:max-w-105 md:max-w-301.25">
+          <span className="inline-flex h-11.25 items-center justify-center gap-2.5 rounded-[100px] bg-white/10 px-12 py-3 text-center text-[14px] leading-normal font-semibold tracking-normal text-white">
             What We Do
           </span>
-          <h1 className="mt-4 text-[28px] font-bold leading-[1.3] tracking-[0] text-white sm:mt-5 sm:text-[40px] md:mx-auto md:max-w-[1205px] md:text-[56px]">
+          <h1 className="mt-4 text-[28px] font-bold leading-[1.3] tracking-normal text-white sm:mt-5 sm:text-[40px] md:mx-auto md:max-w-301.25 md:text-[56px]">
             Training and Development
           </h1>
-          <p className="mx-auto mt-3 max-w-[300px] text-[12px] leading-5 font-medium tracking-[0] text-white sm:mt-4 sm:max-w-[380px] sm:text-sm sm:leading-6 md:max-w-[996px] md:text-[18px] md:leading-[1.5] md:font-semibold">
+          <p className="mx-auto mt-3 max-w-75 text-[12px] leading-5 font-medium tracking-normal text-white sm:mt-4 sm:max-w-95 sm:text-sm sm:leading-6 md:max-w-249 md:text-[18px] md:leading-normal md:font-semibold">
             Our comprehensive range of programs and resources is designed to
             enhance skills, broaden knowledge, and propel careers forward in
             today&apos;s ever-evolving landscape.
@@ -38,7 +38,7 @@ export function HeroSection() {
             <Button
               href="#consultation"
               variant="primary"
-              className="h-12 gap-[10px] rounded-[4px] bg-[#571244] px-6 py-3 text-[18px] leading-[1.5] font-semibold tracking-[0] text-center !text-white md:min-w-[214px]"
+              className="h-12 gap-2.5 rounded-sm bg-[#571244] px-6 py-3 text-[18px] leading-normal font-semibold tracking-normal text-center text-white! md:min-w-53.5"
             >
               Book a Consultation
             </Button>
