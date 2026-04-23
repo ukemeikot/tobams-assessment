@@ -7,22 +7,22 @@ export function LearningManagementSection() {
     <section id="about" className="bg-[rgba(87,18,68,0.10)]">
       <div className="h-4 w-full bg-white sm:h-5" aria-hidden="true" />
       <div className="py-12 md:px-16 md:py-12">
-        <div className="mx-auto grid w-full max-w-360 items-center gap-8 px-4 sm:px-6 md:min-h-[664px] md:grid-cols-[0.92fr_1.08fr] md:gap-12 md:px-0">
+        <div className="mx-auto grid w-full max-w-360 items-center gap-8 px-4 sm:px-6 md:min-h-166 md:grid-cols-[0.92fr_1.08fr] md:gap-12 md:px-0">
           <div className="flex justify-center md:justify-start">
             <PlaceholderImage
               src="/images/learning-management.jpg"
               alt="Learning management system section image"
-              className="aspect-square w-full max-w-60 rounded-full sm:max-w-[320px] lg:max-w-[400px]"
+              className="aspect-square w-full max-w-60 rounded-full sm:max-w-[320px] lg:max-w-100"
               overlay="none"
             />
           </div>
 
-          <div className="mx-auto w-full max-w-[675px] text-center md:mx-0 md:max-w-none md:text-left">
-            <h2 className="mx-auto max-w-[675px] text-[24px] font-semibold leading-[1.5] tracking-[0.03em] text-[#571244] sm:text-[30px] md:mx-0 md:text-[40px]">
+          <div className="mx-auto w-full max-w-168.75 text-center md:mx-0 md:max-w-none md:text-left">
+            <h2 className="mx-auto max-w-168.75 text-[24px] font-semibold leading-normal tracking-[0.03em] text-[#571244] sm:text-[30px] md:mx-0 md:text-[40px]">
               Learning Management System
             </h2>
-            <div className="mt-4 flex flex-col gap-5 rounded-[8px] bg-[rgba(87,18,68,0.10)] p-6 text-left sm:mt-5">
-              <p className="text-[14px] leading-6 font-normal tracking-[0] text-[#151515] sm:text-[16px] md:text-[18px] md:leading-[1.5]">
+            <div className="mt-4 flex flex-col gap-5 rounded-lg bg-[rgba(87,18,68,0.10)] p-6 text-left sm:mt-5">
+              <p className="text-[14px] leading-6 font-normal tracking-normal text-[#151515] sm:text-[16px] md:text-[18px] md:leading-normal">
                 TG Academy is a hub of knowledge and skill-building resources
                 designed to empower tech talents on their learning journey. From
                 technical courses covering the latest programming languages and
