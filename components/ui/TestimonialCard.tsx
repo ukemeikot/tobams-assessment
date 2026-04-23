@@ -21,6 +21,7 @@ export function TestimonialCard({
             src={avatarUrl}
             alt={`${author} profile photo`}
             fill
+            loading="lazy"
             sizes="48px"
             className="object-cover"
           />

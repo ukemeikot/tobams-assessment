@@ -2,13 +2,17 @@ import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
 import { FeatureList } from "@/components/ui/FeatureList";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
+import { Reveal } from "@/components/ui/Reveal";
 import { ceoHubBenefits, managementBenefits } from "@/lib/constants";
 
 export function LeadershipSection() {
   return (
     <section className="bg-white py-6 sm:py-10">
       <Container className="max-w-[1440px] space-y-12 lg:px-16 sm:space-y-16">
-        <article className="mx-auto w-full max-w-[1312px] rounded-[20px] bg-[#2C0922] p-5 sm:p-8 lg:min-h-[719px] lg:p-10">
+        <Reveal
+          as="article"
+          className="mx-auto w-full max-w-[1312px] rounded-[20px] bg-[#2C0922] p-5 sm:p-8 lg:min-h-[719px] lg:p-10"
+        >
           <div className="space-y-4 lg:grid lg:min-h-[639px] lg:grid-cols-[592px_minmax(0,1fr)] lg:items-stretch lg:gap-10 lg:space-y-0">
             <h2 className="px-2 text-[26px] font-semibold leading-[1.5] tracking-[0.03em] text-white sm:text-[30px] lg:hidden">
               Management Development Program
@@ -42,9 +46,13 @@ export function LeadershipSection() {
               </div>
             </div>
           </div>
-        </article>
+        </Reveal>
 
-        <article className="mx-auto w-full max-w-[1312px] rounded-[16px] bg-[rgba(239,67,83,0.2)] p-5 sm:p-8 lg:min-h-[652px] lg:p-10">
+        <Reveal
+          as="article"
+          delay={1}
+          className="mx-auto w-full max-w-[1312px] rounded-[16px] bg-[rgba(239,67,83,0.2)] p-5 sm:p-8 lg:min-h-[652px] lg:p-10"
+        >
           <p className="text-[16px] leading-[1.3] font-semibold italic tracking-[0] text-[#1671D9] sm:text-[18px] lg:text-[20px]">
             Learning With Our CEO:
           </p>
@@ -103,7 +111,7 @@ export function LeadershipSection() {
               </Button>
             </div>
           </div>
-        </article>
+        </Reveal>
       </Container>
     </section>
   );

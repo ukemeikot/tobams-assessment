@@ -3,6 +3,7 @@
 import { useRef } from "react";
 
 import { Container } from "@/components/ui/Container";
+import { Reveal } from "@/components/ui/Reveal";
 import { TestimonialCard } from "@/components/ui/TestimonialCard";
 import { testimonials } from "@/lib/constants";
 
@@ -27,24 +28,26 @@ export function TestimonialsSection() {
   return (
     <section className="w-full border-b border-[rgba(196,196,196,0.3)] bg-white py-10 sm:py-12 lg:py-16">
       <Container className="max-w-[1440px] lg:px-16">
-        <div className="text-center">
+        <Reveal className="text-center">
           <h2 className="text-[30px] leading-[1.3] font-bold tracking-[0] text-[#151515] sm:text-[34px] lg:text-[40px]">
             Testimonials
           </h2>
-        </div>
+        </Reveal>
 
-        <div
-          ref={railRef}
-          className="mt-8 overflow-x-auto pb-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
-        >
-          <div className="flex gap-4 sm:gap-5">
-            {testimonials.map((testimonial) => (
-              <TestimonialCard key={testimonial.author} {...testimonial} />
-            ))}
+        <Reveal delay={1} className="mt-8">
+          <div
+            ref={railRef}
+            className="overflow-x-auto pb-4 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden"
+          >
+            <div className="flex gap-4 sm:gap-5">
+              {testimonials.map((testimonial) => (
+                <TestimonialCard key={testimonial.author} {...testimonial} />
+              ))}
+            </div>
           </div>
-        </div>
+        </Reveal>
 
-        <div className="mt-4 flex justify-center gap-3 sm:justify-end">
+        <Reveal delay={2} className="mt-4 flex justify-center gap-3 sm:justify-end">
           <button
             type="button"
             aria-label="Previous testimonials"
@@ -89,7 +92,7 @@ export function TestimonialsSection() {
               />
             </svg>
           </button>
-        </div>
+        </Reveal>
       </Container>
     </section>
   );

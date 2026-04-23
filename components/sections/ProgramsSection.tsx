@@ -1,6 +1,7 @@
 import { Container } from "@/components/ui/Container";
 import { FeatureList } from "@/components/ui/FeatureList";
 import { PlaceholderImage } from "@/components/ui/PlaceholderImage";
+import { Reveal } from "@/components/ui/Reveal";
 import { programHighlights } from "@/lib/constants";
 
 export function ProgramsSection() {
@@ -8,8 +9,10 @@ export function ProgramsSection() {
     <section id="projects" className="bg-white py-10 sm:py-16 lg:py-20">
       <Container className="max-w-[1440px] space-y-10 sm:space-y-14 lg:px-16 lg:space-y-16">
         {programHighlights.map((program, index) => (
-          <article
+          <Reveal
             key={program.title}
+            as="article"
+            delay={(index % 3) as 0 | 1 | 2}
             className={`space-y-4 lg:grid lg:items-center lg:space-y-0 ${
               index === 1
                 ? "lg:grid-cols-[minmax(0,599px)_minmax(0,1fr)] lg:gap-8 xl:grid-cols-[599px_minmax(0,1fr)] xl:gap-10 min-[1440px]:mx-auto min-[1440px]:w-full min-[1440px]:max-w-[1312px] min-[1440px]:grid-cols-[599px_629px] min-[1440px]:gap-[81px] min-[1440px]:pr-[3px]"
@@ -69,7 +72,7 @@ export function ProgramsSection() {
                 <FeatureList items={program.items} />
               </div>
             </div>
-          </article>
+          </Reveal>
         ))}
       </Container>
     </section>

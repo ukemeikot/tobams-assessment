@@ -33,6 +33,7 @@ export function PlaceholderImage({
         alt={alt}
         fill
         priority={priority}
+        loading={priority ? undefined : "lazy"}
         sizes="(max-width: 768px) 100vw, 50vw"
         className={`object-cover ${imageClassName}`}
       />
