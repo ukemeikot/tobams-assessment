@@ -12,7 +12,7 @@ export function ProgramsSection() {
             key={program.title}
             className={`space-y-4 lg:grid lg:items-center lg:space-y-0 ${
               index === 1
-                ? "lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-10 xl:mx-auto xl:w-full xl:max-w-[1312px] xl:grid-cols-[602px_629px] xl:gap-[81px]"
+                ? "lg:grid-cols-[minmax(0,599px)_minmax(0,1fr)] lg:gap-8 xl:grid-cols-[599px_minmax(0,1fr)] xl:gap-10 min-[1440px]:mx-auto min-[1440px]:w-full min-[1440px]:max-w-[1312px] min-[1440px]:grid-cols-[599px_629px] min-[1440px]:gap-[81px] min-[1440px]:pr-[3px]"
                 : "lg:grid-cols-2 lg:gap-12"
             }`}
           >
@@ -28,17 +28,17 @@ export function ProgramsSection() {
                   index === 0
                     ? "/images/corporate-training.jpg"
                     : index === 1
-                    ? "/images/placeholder-portrait.svg"
-                    : "/images/placeholder-landscape.svg"
+                    ? "/images/personal.jpg"
+                    : "/images/capacity-development.jpg"
                 }
                 alt={`${program.title} section image`}
-                label={index === 0 ? undefined : program.imageLabel}
-                className={`w-full overflow-hidden rounded-[18px] border ${
+                label={undefined}
+                className={`mx-auto w-full overflow-hidden rounded-[18px] border ${
                   index === 0
-                    ? "h-auto border-transparent md:h-[346px] md:w-[602px] md:max-w-[602px] md:rounded-tl-[56px] md:rounded-tr-[24px] md:rounded-br-[23px] md:rounded-bl-[12px]"
+                    ? "aspect-[1.74/1] border-transparent md:h-[346px] md:w-[602px] md:max-w-[602px] md:rounded-tl-[56px] md:rounded-tr-[24px] md:rounded-br-[23px] md:rounded-bl-[12px]"
                     : index === 1
-                      ? "aspect-[1.42/0.92] border-transparent"
-                      : "aspect-[1.4/0.92] border-transparent"
+                      ? "aspect-[1.74/1] border-transparent lg:h-[378px] lg:w-[599px] lg:max-w-[599px] lg:rounded-tl-[33px] lg:rounded-tr-[8px] lg:rounded-br-[8px] lg:rounded-bl-[8px]"
+                      : "aspect-[1.48/1] border-transparent lg:h-[405px] lg:w-[601px] lg:max-w-[601px] lg:rounded-tl-[40px] lg:rounded-tr-[8px] lg:rounded-br-[8px] lg:rounded-bl-[8px]"
                 }`}
                 overlay="light"
               />
@@ -47,7 +47,7 @@ export function ProgramsSection() {
             <div
               className={`space-y-4 ${
                 index % 2 === 0 ? "lg:order-1" : "lg:order-2"
-              } ${index === 1 ? "min-w-0 lg:w-full lg:space-y-[21px] xl:max-w-[629px]" : ""}`}
+              } ${index === 1 ? "min-w-0 lg:w-full lg:space-y-[21px] min-[1440px]:max-w-[629px]" : ""}`}
             >
               <h2
                 className={`hidden text-[40px] font-semibold leading-[1.5] tracking-[0.03em] text-[#151515] lg:block ${
