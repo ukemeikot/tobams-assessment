@@ -1,36 +1,104 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# TOBAMS Frontend Intern Assessment
+
+Production-ready static landing page implementation for the TOBAMS Frontend Intern Assessment, built with Next.js App Router and Tailwind CSS.
+
+## Links
+
+- Live URL: https://app.tobams.ukemeikot.online
+- Figma Design: https://www.figma.com/design/wuqCLkK1feTgB6xxSRRwZu/Frontend-Intern-Assessment?node-id=0-1&p=f&t=qxnAKp4Ael8QtLYz-0
+- GitHub Repository: https://github.com/ukemeikot/tobams-assessment
+
+## Stack
+
+- Next.js 16.2.4
+- React 19
+- TypeScript
+- Tailwind CSS 4
+- App Router
+- `next/image` for image optimization
+- `next/font` for typography loading
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
+
+- Node.js 20+
+- pnpm
+
+### Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+pnpm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Run in Development
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+pnpm dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Open `http://localhost:3000` in your browser.
 
-## Learn More
+### Production Build
 
-To learn more about Next.js, take a look at the following resources:
+```bash
+pnpm build
+pnpm start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```text
+app/
+  globals.css
+  layout.tsx
+  page.tsx
+  favicon.ico
+  icon.png
+  apple-icon.png
 
-## Deploy on Vercel
+components/
+  layout/
+  sections/
+  ui/
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+lib/
+  constants.ts
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+public/
+  images/
+```
+
+## Features Implemented
+
+- Pixel-focused static implementation based on the provided Figma and reference screenshots
+- Responsive layouts for mobile, tablet, and desktop
+- Reusable component-based structure under `/components`
+- Semantic HTML structure using `header`, `nav`, `main`, `section`, and `footer`
+- Optimized local images with `next/image`
+- Global font setup using `next/font`
+- Footer, testimonial carousel controls, mobile navigation, and CTA sections implemented as reusable UI patterns
+
+## Design Decisions and Technical Notes
+
+- The app uses Tailwind responsive utilities for layout changes across breakpoints.
+- The design was split into reusable sections instead of keeping everything in a single page file.
+- A square favicon was generated from the TOBAMS logo mark because the original horizontal logo would not read clearly at favicon size.
+- Testimonial profile images use remote avatar sources to match the visual direction of the mockup more closely.
+- The local development script uses `next dev --webpack` for stability in this environment.
+
+## Accessibility Notes
+
+- Semantic elements are used throughout the page structure.
+- Interactive elements are keyboard-focusable.
+- Images include descriptive `alt` text.
+- Navigation and testimonial controls include accessible labels.
+
+## Known Issues / Assumptions
+
+- Some content and imagery were implemented from provided screenshots where the exact Figma-exported asset or text styling details were not available locally.
+- Remote testimonial avatars are placeholders chosen to match the gender presentation shown in the design references.
+
+## AI Disclosure
+
+AI-assisted tooling was used during development for implementation support and iteration. All code, structure, and final project integration were reviewed and adjusted within the project context before submission.
