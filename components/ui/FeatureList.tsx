@@ -12,7 +12,7 @@ type LightningBulletIconProps = {
 
 function LightningBulletIcon({
   color = "#571244",
-  className = "h-4.5 w-4.5",
+  className = "h-[18px] w-[18px]",
 }: LightningBulletIconProps) {
   return (
     <svg

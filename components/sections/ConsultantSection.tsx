@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { Reveal } from "@/components/ui/Reveal";
 import { consultantFeatures } from "@/lib/constants";
 
 export function ConsultantSection() {
@@ -7,7 +8,7 @@ export function ConsultantSection() {
     <section id="consultation" className="bg-white py-8 sm:py-12">
       <article className="w-full bg-[rgba(87,18,68,0.1)]">
         <div className="mx-auto w-full max-w-[1440px] px-4 py-8 sm:px-8 sm:py-10 lg:min-h-[642px] lg:px-16 lg:py-12">
-          <div className="space-y-[10px]">
+          <Reveal className="space-y-[10px]">
             <div className="max-w-[1220px]">
               <h2 className="text-[30px] leading-[1.3] font-semibold tracking-[0] text-[#571244] sm:text-[34px] lg:text-[40px]">
                 Training The Consultant
@@ -51,12 +52,15 @@ export function ConsultantSection() {
                 Learn More
               </Button>
             </div>
-          </div>
+          </Reveal>
         </div>
       </article>
 
       <Container className="max-w-[1440px] pt-6 sm:pt-8 lg:px-16 lg:pt-10">
-        <div className="mx-auto flex w-full max-w-[1134px] flex-col gap-8 rounded-[8px] bg-[#571244] px-5 py-8 text-center text-white sm:px-8 lg:px-16 lg:py-8">
+        <Reveal
+          delay={1}
+          className="mx-auto flex w-full max-w-[1134px] flex-col gap-8 rounded-[8px] bg-[#571244] px-5 py-8 text-center text-white sm:px-8 lg:px-16 lg:py-8"
+        >
           <p className="mx-auto max-w-[720px] text-center text-[16px] leading-[1.5] font-semibold tracking-[0.03em] text-white sm:text-[18px] lg:text-[20px]">
             Want to accelerate professional growth and development at your
             organisation? See how we can help.
@@ -70,7 +74,7 @@ export function ConsultantSection() {
               Book a Consultation
             </Button>
           </div>
-        </div>
+        </Reveal>
       </Container>
     </section>
   );

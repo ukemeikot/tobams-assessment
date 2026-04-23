@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BrandMark } from "@/components/ui/BrandMark";
 import { Button } from "@/components/ui/Button";
 import { Container } from "@/components/ui/Container";
+import { Reveal } from "@/components/ui/Reveal";
 import {
   companyLinks,
   footerNoteLinks,
@@ -16,7 +17,7 @@ function LinkedInIcon() {
     <svg
       aria-hidden="true"
       viewBox="0 0 24 24"
-      className="h-[20px] w-[20px] text-[#151515]"
+      className="h-5 w-5 text-[#151515]"
       fill="currentColor"
       xmlns="http://www.w3.org/2000/svg"
     >
@@ -153,7 +154,7 @@ export function SiteFooter() {
 
       <Container className="py-8 sm:py-10">
         <div className="grid gap-8 lg:grid-cols-[1.2fr_2fr] lg:gap-10">
-          <div className="space-y-6">
+          <Reveal className="space-y-6">
             <BrandMark compact />
             <p className="max-w-sm text-[16px] leading-[1.5] font-normal tracking-[0.03em] text-[#F8F8F8]">
               Tobams Group is an innovative consultancy firm reshaping the
@@ -177,17 +178,17 @@ export function SiteFooter() {
                 </Link>
               ))}
             </div>
-          </div>
+          </Reveal>
 
-          <div className="grid gap-8 lg:grid-cols-3">
+          <Reveal delay={1} className="grid gap-8 lg:grid-cols-3">
             <FooterLinkColumn title="What We Do" items={whatWeDoLinks} />
             <FooterLinkColumn title="Company" items={companyLinks} />
             <FooterLinkColumn title="Solution" items={solutionLinks} />
-          </div>
+          </Reveal>
         </div>
 
         <div className="mt-8">
-          <div className="mx-auto flex w-full max-w-[1312px] flex-col gap-6 rounded-[8px] bg-[rgba(255,255,255,0.06)] p-6 lg:min-h-[181px] lg:flex-row lg:items-start lg:justify-between lg:gap-6">
+          <Reveal className="mx-auto flex w-full max-w-[1312px] flex-col gap-6 rounded-[8px] bg-[rgba(255,255,255,0.06)] p-6 lg:min-h-[181px] lg:flex-row lg:items-start lg:justify-between lg:gap-6">
             <div className="flex-1">
               <h3 className="text-[14px] leading-[1.4] font-semibold tracking-[0] text-white">
                 Registered Offices
@@ -228,10 +229,13 @@ export function SiteFooter() {
                 </p>
               </div>
             </div>
-          </div>
+          </Reveal>
         </div>
 
-        <div className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-5 text-center text-[12px] leading-[1.5] font-normal tracking-[0] text-white/52 md:flex-row md:items-center md:justify-between md:text-left">
+        <Reveal
+          delay={2}
+          className="mt-8 flex flex-col gap-3 border-t border-white/10 pt-5 text-center text-[12px] leading-[1.5] font-normal tracking-[0] text-white/52 md:flex-row md:items-center md:justify-between md:text-left"
+        >
           <p>Copyright © Tobams Group, 2024. All rights reserved.</p>
           <div className="flex flex-wrap justify-center gap-6 md:justify-end">
             {footerNoteLinks.map((item) => (
@@ -244,7 +248,7 @@ export function SiteFooter() {
               </Link>
             ))}
           </div>
-        </div>
+        </Reveal>
       </Container>
     </footer>
   );
